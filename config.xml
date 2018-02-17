@@ -79,7 +79,17 @@
       <categorizationCriteria>
         <org.jenkinsci.plugins.categorizedview.GroupingRule>
           <groupRegex>^votertools_command|^FloridaCiviUpdate</groupRegex>
-          <namingRule>VoterTools</namingRule>
+          <namingRule>CiviCRM VoterTools</namingRule>
+          <useDisplayName>false</useDisplayName>
+        </org.jenkinsci.plugins.categorizedview.GroupingRule>
+        <org.jenkinsci.plugins.categorizedview.GroupingRule>
+          <groupRegex>^GaGP-Phone-App</groupRegex>
+          <namingRule>GPGA Phone App</namingRule>
+          <useDisplayName>false</useDisplayName>
+        </org.jenkinsci.plugins.categorizedview.GroupingRule>
+        <org.jenkinsci.plugins.categorizedview.GroupingRule>
+          <groupRegex>PetVerify</groupRegex>
+          <namingRule>Petition Verify</namingRule>
           <useDisplayName>false</useDisplayName>
         </org.jenkinsci.plugins.categorizedview.GroupingRule>
       </categorizationCriteria>
