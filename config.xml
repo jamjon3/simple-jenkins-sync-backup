@@ -49,14 +49,17 @@
     </hudson.model.AllView>
     <org.jenkinsci.plugins.categorizedview.CategorizedJobsView plugin="categorized-view@1.10">
       <owner class="hudson" reference="../../.."/>
-      <name>Cat View</name>
+      <name>Campaign Apps</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>FloridaCiviUpdate</string>
+        <string>GaGP-Phone-App_Develop</string>
         <string>ImportFloridaVoterData</string>
+        <string>Politics PetVerify</string>
+        <string>VoterListRegistry_Develop</string>
         <string>votertools_command</string>
         <string>votertools_command_packages</string>
       </jobNames>
@@ -75,7 +78,7 @@
       <regexToIgnoreOnColorComputing></regexToIgnoreOnColorComputing>
       <categorizationCriteria>
         <org.jenkinsci.plugins.categorizedview.GroupingRule>
-          <groupRegex>^(.*)</groupRegex>
+          <groupRegex>^votertools_command|^FloridaCiviUpdate</groupRegex>
           <namingRule>VoterTools</namingRule>
           <useDisplayName>false</useDisplayName>
         </org.jenkinsci.plugins.categorizedview.GroupingRule>
