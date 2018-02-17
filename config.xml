@@ -107,6 +107,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>revroad-rss2feed-processor</string>
       </jobNames>
       <jobFilters/>
       <columns>
@@ -118,10 +119,16 @@
         <hudson.views.LastDurationColumn/>
         <hudson.views.BuildButtonColumn/>
       </columns>
-      <recurse>false</recurse>
+      <recurse>true</recurse>
       <groupingRules/>
       <regexToIgnoreOnColorComputing></regexToIgnoreOnColorComputing>
-      <categorizationCriteria/>
+      <categorizationCriteria>
+        <org.jenkinsci.plugins.categorizedview.GroupingRule>
+          <groupRegex>^revroad-rss2feed-processor</groupRegex>
+          <namingRule>Revolutionary Road Radio Show RSS Feed Processor</namingRule>
+          <useDisplayName>false</useDisplayName>
+        </org.jenkinsci.plugins.categorizedview.GroupingRule>
+      </categorizationCriteria>
     </org.jenkinsci.plugins.categorizedview.CategorizedJobsView>
   </views>
   <primaryView>all</primaryView>
