@@ -78,7 +78,7 @@
       <regexToIgnoreOnColorComputing></regexToIgnoreOnColorComputing>
       <categorizationCriteria>
         <org.jenkinsci.plugins.categorizedview.GroupingRule>
-          <groupRegex>^votertools_command|^FloridaCiviUpdate</groupRegex>
+          <groupRegex>^votertools_command|^FloridaCiviUpdate|^ImportFloridaVoterData</groupRegex>
           <namingRule>CiviCRM VoterTools</namingRule>
           <useDisplayName>false</useDisplayName>
         </org.jenkinsci.plugins.categorizedview.GroupingRule>
@@ -90,6 +90,11 @@
         <org.jenkinsci.plugins.categorizedview.GroupingRule>
           <groupRegex>PetVerify</groupRegex>
           <namingRule>Petition Verify</namingRule>
+          <useDisplayName>false</useDisplayName>
+        </org.jenkinsci.plugins.categorizedview.GroupingRule>
+        <org.jenkinsci.plugins.categorizedview.GroupingRule>
+          <groupRegex>VoterListRegistry</groupRegex>
+          <namingRule>^VoterListRegistry</namingRule>
           <useDisplayName>false</useDisplayName>
         </org.jenkinsci.plugins.categorizedview.GroupingRule>
       </categorizationCriteria>
