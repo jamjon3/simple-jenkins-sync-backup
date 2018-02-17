@@ -93,8 +93,8 @@
           <useDisplayName>false</useDisplayName>
         </org.jenkinsci.plugins.categorizedview.GroupingRule>
         <org.jenkinsci.plugins.categorizedview.GroupingRule>
-          <groupRegex>VoterListRegistry</groupRegex>
-          <namingRule>^VoterListRegistry</namingRule>
+          <groupRegex>^VoterListRegistry</groupRegex>
+          <namingRule>VoterListRegistry</namingRule>
           <useDisplayName>false</useDisplayName>
         </org.jenkinsci.plugins.categorizedview.GroupingRule>
       </categorizationCriteria>
