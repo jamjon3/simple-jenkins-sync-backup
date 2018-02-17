@@ -131,7 +131,7 @@
       </categorizationCriteria>
     </org.jenkinsci.plugins.categorizedview.CategorizedJobsView>
   </views>
-  <primaryView>all</primaryView>
+  <primaryView>Campaign Apps</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
   <disabledAgentProtocols>
     <string>JNLP2-connect</string>
@@ -148,7 +148,7 @@
         <unserializable-parents/>
         <tree-map>
           <default>
-            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+            <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../../../../views/org.jenkinsci.plugins.categorizedview.CategorizedJobsView[2]/jobNames/comparator"/>
           </default>
           <int>4</int>
           <string>GITHUB_OAUTH_KEY</string>
