@@ -1,0 +1,72 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>mkdir -p tmp</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>PATH=$PATH:/usr/local/bin;votertools florida:civiupdate --voterkey fl_voter_id_1 gpfl /tmp/civivoters.json</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>rm -Rf tmp</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>rm -Rf history
+mkdir -p history
+mv 	civicrmhistoryupdate*.zip history</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>rm -Rf voter
+mkdir -p voter
+mv 	civicrmupdate*.zip voter</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>PATH=$PATH:/usr/local/bin;votertools florida:missingpartycontacts --voterkey fl_voter_id_1 --partycode GRE gpfl /tmp/civivoters.json</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>rm -Rf newgreens
+mkdir -p newgreens
+mv civi*.csv newgreens
+mv civi*.zip newgreens</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>PATH=$PATH:/usr/local/bin;votertools florida:missingpartycontacts --voterkey fl_voter_id_1 --partycode ECO gpfl /tmp/civivoters.json</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>rm -Rf newecos
+mkdir -p newecos
+mv civi*.csv newecos
+mv civi*.zip newecos</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>PATH=$PATH:/usr/local/bin;votertools florida:missingpartycontacts --voterkey fl_voter_id_1 --partycode PSL gpfl /tmp/civivoters.json</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>rm -Rf newpsls
+mkdir -p newpsls
+mv civi*.csv newpsls
+mv civi*.zip newpsls</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>PATH=$PATH:/usr/local/bin;votertools florida:civiupdateparty --voterkey fl_voter_id_1 gpfl /tmp/civivoters.json</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>rm -Rf party
+mkdir -p party
+mv civi*.zip party</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
