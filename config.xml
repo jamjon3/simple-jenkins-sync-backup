@@ -159,7 +159,7 @@
           <string>/usr/local/etc/ansible/private/dev_vault_key.txt</string>
           <string>USF_ANSIBLE_VAULT_KEY_PROD</string>
           <string>/usr/local/etc/ansible/private/prod_vault_key.txt</string>
-          <string>USF_ANSIBLE_VAULT_KEY_YMD</string>
+          <string>YMD_ANSIBLE_VAULT_KEY</string>
           <string>/usr/local/etc/ansible/private/ymd_vault_key.txt</string>
         </tree-map>
       </envVars>
