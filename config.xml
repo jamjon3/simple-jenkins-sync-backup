@@ -138,6 +138,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>RuleChains_Develop</string>
       </jobNames>
       <jobFilters/>
       <columns>
