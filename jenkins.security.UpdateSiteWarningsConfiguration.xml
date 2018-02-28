@@ -2,6 +2,7 @@
 <jenkins.security.UpdateSiteWarningsConfiguration>
   <ignoredWarnings>
     <string>SECURITY-336</string>
+    <string>SECURITY-458</string>
     <string>SECURITY-248</string>
     <string>SECURITY-554</string>
   </ignoredWarnings>
