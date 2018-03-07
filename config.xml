@@ -186,9 +186,11 @@
         <unserializable-parents/>
         <tree-map>
           <default>
-            <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../../../../views/org.jenkinsci.plugins.categorizedview.CategorizedJobsView[2]/jobNames/comparator"/>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>5</int>
+          <int>6</int>
+          <string>BINTRAY_API_KEY</string>
+          <string>3128134b416c8d020d72490229c356a3db4f441c</string>
           <string>GITHUB_OAUTH_KEY</string>
           <string>885867c33ebbb72e5f1253643e63ec413f4c03ec</string>
           <string>USF_ANSIBLE_VAULT_CI_KEY</string>
