@@ -20,7 +20,8 @@
     </jenkins.model.BuildDiscarderProperty>
     <EnvInjectJobProperty plugin="envinject@2.1.5">
       <info>
-        <propertiesContent>DEPLOY_KEY=$YMD_ANSIBLE_VAULT_KEY</propertiesContent>
+        <propertiesContent>DEPLOY_KEY=$YMD_ANSIBLE_VAULT_KEY
+DEPLOY_ENV=Development</propertiesContent>
         <secureGroovyScript plugin="script-security@1.41">
           <script></script>
           <sandbox>false</sandbox>
