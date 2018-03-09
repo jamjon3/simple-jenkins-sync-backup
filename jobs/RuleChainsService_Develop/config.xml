@@ -26,7 +26,7 @@
       <info>
         <propertiesContent>DEPLOY_KEY=$YMD_ANSIBLE_VAULT_KEY
 DEPLOY_ENV=Development
-DEPLOY_HOST=dims</propertiesContent>
+DEPLOY_HOST=jenkins</propertiesContent>
         <secureGroovyScript plugin="script-security@1.41">
           <script></script>
           <sandbox>false</sandbox>
