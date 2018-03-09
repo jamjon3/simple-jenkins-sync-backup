@@ -5,7 +5,6 @@
   </disabledAdministrativeMonitors>
   <version>2.109</version>
   <installState>
-    <isSetupComplete>true</isSetupComplete>
     <name>RUNNING</name>
   </installState>
   <numExecutors>2</numExecutors>
