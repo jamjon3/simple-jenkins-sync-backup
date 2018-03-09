@@ -25,7 +25,8 @@
     <EnvInjectJobProperty plugin="envinject@2.1.5">
       <info>
         <propertiesContent>DEPLOY_KEY=$YMD_ANSIBLE_VAULT_KEY
-DEPLOY_ENV=Development</propertiesContent>
+DEPLOY_ENV=Development
+DEPLOY_HOST=dims</propertiesContent>
         <secureGroovyScript plugin="script-security@1.41">
           <script></script>
           <sandbox>false</sandbox>
