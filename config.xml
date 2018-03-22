@@ -24,7 +24,7 @@
       <properties>
         <hudson.tools.InstallSourceProperty>
           <installers>
-            <hudson.tools.JDKInstaller plugin="jdk-tool@1.0">
+            <hudson.tools.JDKInstaller plugin="jdk-tool@1.1">
               <id>jdk-8u112-oth-JPR</id>
               <acceptLicense>true</acceptLicense>
             </hudson.tools.JDKInstaller>
@@ -38,7 +38,7 @@
       <properties>
         <hudson.tools.InstallSourceProperty>
           <installers>
-            <hudson.tools.JDKInstaller plugin="jdk-tool@1.0">
+            <hudson.tools.JDKInstaller plugin="jdk-tool@1.1">
               <id>jdk-7u80-oth-JPR</id>
               <acceptLicense>true</acceptLicense>
             </hudson.tools.JDKInstaller>
