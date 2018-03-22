@@ -1,13 +1,13 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<jenkins.plugins.nodejs.tools.NodeJSInstallation_-DescriptorImpl plugin="nodejs@1.2.4">
+<jenkins.plugins.nodejs.tools.NodeJSInstallation_-DescriptorImpl plugin="nodejs@1.2.5">
   <installations class="jenkins.plugins.nodejs.tools.NodeJSInstallation-array">
     <jenkins.plugins.nodejs.tools.NodeJSInstallation>
-      <name>nodeJS</name>
+      <name>nodejs</name>
       <properties>
         <hudson.tools.InstallSourceProperty>
           <installers>
             <jenkins.plugins.nodejs.tools.NodeJSInstaller>
-              <id>6.7.0</id>
+              <id>9.9.0</id>
               <npmPackagesRefreshHours>72</npmPackagesRefreshHours>
             </jenkins.plugins.nodejs.tools.NodeJSInstaller>
           </installers>
