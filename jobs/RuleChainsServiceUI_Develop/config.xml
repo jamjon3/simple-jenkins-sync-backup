@@ -26,7 +26,8 @@
       <info>
         <propertiesContent>DEPLOY_KEY=$YMD_ANSIBLE_VAULT_KEY
 DEPLOY_ENV=Development
-DEPLOY_HOST=jenkins</propertiesContent>
+DEPLOY_HOST=jenkins
+AC_CONTAINER_HOSTNAME=rcui.ymd.com</propertiesContent>
         <secureGroovyScript plugin="script-security@1.42">
           <script></script>
           <sandbox>false</sandbox>
