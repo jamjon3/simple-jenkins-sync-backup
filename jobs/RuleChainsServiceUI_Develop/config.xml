@@ -27,7 +27,8 @@
         <propertiesContent>DEPLOY_KEY=$YMD_ANSIBLE_VAULT_KEY
 DEPLOY_ENV=Development
 DEPLOY_HOST=jenkins
-AC_ANSIBLE_FQDN=rcui.yourmessagedelivered.com</propertiesContent>
+AC_ANSIBLE_FQDN=rcui.yourmessagedelivered.com
+AC_DEPLOY_KEY=$DEPLOY_KEY</propertiesContent>
         <secureGroovyScript plugin="script-security@1.42">
           <script></script>
           <sandbox>false</sandbox>
