@@ -4,7 +4,7 @@
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <io.fabric8.jenkins.openshiftsync.BuildConfigProjectProperty plugin="openshift-sync@1.0.7">
+    <io.fabric8.jenkins.openshiftsync.BuildConfigProjectProperty plugin="openshift-sync@1.0.9">
       <uid></uid>
       <namespace></namespace>
       <name></name>
@@ -26,8 +26,9 @@
       <info>
         <propertiesContent>DEPLOY_KEY=$YMD_ANSIBLE_VAULT_KEY
 DEPLOY_ENV=Development
-DEPLOY_HOST=jenkins</propertiesContent>
-        <secureGroovyScript plugin="script-security@1.41">
+DEPLOY_HOST=rulechains
+</propertiesContent>
+        <secureGroovyScript plugin="script-security@1.43">
           <script></script>
           <sandbox>false</sandbox>
         </secureGroovyScript>
