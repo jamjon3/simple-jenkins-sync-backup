@@ -27,6 +27,7 @@
         <propertiesContent>DEPLOY_KEY=$YMD_ANSIBLE_VAULT_KEY
 DEPLOY_ENV=Development
 DEPLOY_HOST=rulechains
+UI_JOB_NAME=RuleChainsServiceUI_Develop
 </propertiesContent>
         <secureGroovyScript plugin="script-security@1.43">
           <script></script>
