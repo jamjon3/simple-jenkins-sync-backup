@@ -152,6 +152,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>RuleChains_Develop</string>
+        <string>RuleChainsMB_Develop</string>
         <string>RuleChainsService_Develop</string>
         <string>RuleChainsServiceUI_Develop</string>
       </jobNames>
