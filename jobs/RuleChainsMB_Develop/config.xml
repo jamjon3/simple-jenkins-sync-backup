@@ -1,6 +1,18 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.17">
-  <properties/>
+  <actions/>
+  <description></description>
+  <properties>
+    <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.5.2">
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+      <override>false</override>
+    </org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@1.2.8">
+      <dockerLabel></dockerLabel>
+      <registry plugin="docker-commons@1.11"/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig>
+  </properties>
   <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.0.19">
     <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
   </folderViews>
@@ -20,7 +32,36 @@
   <triggers/>
   <disabled>false</disabled>
   <sources class="jenkins.branch.MultiBranchProject$BranchSourceList" plugin="branch-api@2.0.19">
-    <data/>
+    <data>
+      <jenkins.branch.BranchSource>
+        <source class="jenkins.plugins.git.GitSCMSource" plugin="git@3.8.0">
+          <id>933ea87e-7995-4545-b05c-9819f3973fd3</id>
+          <remote>https://github.com/jamjon3/RuleChainsService.git</remote>
+          <credentialsId></credentialsId>
+          <traits>
+            <jenkins.plugins.git.traits.BranchDiscoveryTrait/>
+            <jenkins.plugins.git.traits.TagDiscoveryTrait/>
+          </traits>
+        </source>
+        <strategy class="jenkins.branch.DefaultBranchPropertyStrategy">
+          <properties class="empty-list"/>
+        </strategy>
+      </jenkins.branch.BranchSource>
+      <jenkins.branch.BranchSource>
+        <source class="jenkins.plugins.git.GitSCMSource" plugin="git@3.8.0">
+          <id>27d96ab9-20cb-498c-bdc2-3e7a9c1d6a7b</id>
+          <remote>https://github.com/jamjon3/RuleChainsService-UI.git</remote>
+          <credentialsId></credentialsId>
+          <traits>
+            <jenkins.plugins.git.traits.BranchDiscoveryTrait/>
+            <jenkins.plugins.git.traits.TagDiscoveryTrait/>
+          </traits>
+        </source>
+        <strategy class="jenkins.branch.DefaultBranchPropertyStrategy">
+          <properties class="empty-list"/>
+        </strategy>
+      </jenkins.branch.BranchSource>
+    </data>
     <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
   </sources>
   <factory class="org.jenkinsci.plugins.workflow.multibranch.WorkflowBranchProjectFactory">
