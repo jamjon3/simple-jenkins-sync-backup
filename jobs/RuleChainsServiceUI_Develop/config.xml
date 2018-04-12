@@ -1,10 +1,10 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<flow-definition plugin="workflow-job@2.17">
+<flow-definition plugin="workflow-job@2.18">
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <io.fabric8.jenkins.openshiftsync.BuildConfigProjectProperty plugin="openshift-sync@1.0.9">
+    <io.fabric8.jenkins.openshiftsync.BuildConfigProjectProperty plugin="openshift-sync@1.0.12">
       <uid></uid>
       <namespace></namespace>
       <name></name>
@@ -26,10 +26,10 @@
       <info>
         <propertiesContent>DEPLOY_KEY=$YMD_ANSIBLE_VAULT_KEY
 DEPLOY_ENV=Development
-DEPLOY_HOST=jenkins
+DEPLOY_HOST=rulechains
 AC_ANSIBLE_FQDN=rcui.yourmessagedelivered.com
 AC_DEPLOY_KEY=$YMD_ANSIBLE_VAULT_KEY</propertiesContent>
-        <secureGroovyScript plugin="script-security@1.42">
+        <secureGroovyScript plugin="script-security@1.43">
           <script></script>
           <sandbox>false</sandbox>
         </secureGroovyScript>
@@ -41,7 +41,7 @@ AC_DEPLOY_KEY=$YMD_ANSIBLE_VAULT_KEY</propertiesContent>
       <overrideBuildParameters>false</overrideBuildParameters>
     </EnvInjectJobProperty>
   </properties>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.45">
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.47">
     <scm class="hudson.plugins.git.GitSCM" plugin="git@3.8.0">
       <configVersion>2</configVersion>
       <userRemoteConfigs>
