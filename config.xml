@@ -3,7 +3,7 @@
   <disabledAdministrativeMonitors>
     <string>jenkins.diagnostics.SecurityIsOffMonitor</string>
   </disabledAdministrativeMonitors>
-  <version>2.114</version>
+  <version>2.115</version>
   <installState>
     <name>RUNNING</name>
   </installState>
