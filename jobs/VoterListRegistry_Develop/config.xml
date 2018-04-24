@@ -43,7 +43,7 @@ DEPLOY_HOST=VoterListRegistry</propertiesContent>
       <configVersion>2</configVersion>
       <userRemoteConfigs>
         <hudson.plugins.git.UserRemoteConfig>
-          <url>git_ymd:VoterListRegistry</url>
+          <url>gitymd:VoterListRegistry</url>
           <credentialsId>gitYMD</credentialsId>
         </hudson.plugins.git.UserRemoteConfig>
       </userRemoteConfigs>
