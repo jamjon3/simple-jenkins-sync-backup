@@ -175,6 +175,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>Drupal8_Civi</string>
       </jobNames>
       <jobFilters/>
       <columns>
