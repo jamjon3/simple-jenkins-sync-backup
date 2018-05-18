@@ -175,7 +175,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>Drupal8_Civi</string>
+        <string>ymd-dynamic-inventory</string>
       </jobNames>
       <jobFilters/>
       <columns>
