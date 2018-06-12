@@ -66,6 +66,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>adop-docker-compose</string>
         <string>FloridaCiviUpdate</string>
         <string>GaGP-Phone-App_Develop</string>
         <string>ImportFloridaVoterData</string>
