@@ -91,7 +91,7 @@
       <regexToIgnoreOnColorComputing></regexToIgnoreOnColorComputing>
       <categorizationCriteria>
         <org.jenkinsci.plugins.categorizedview.GroupingRule>
-          <groupRegex>^votertools_command|^FloridaCiviUpdate|^ImportFloridaVoterData</groupRegex>
+          <groupRegex>^votertools_command|^FloridaCiviUpdate|^ImportFloridaVoterData|^ImportFloridaHistoryData</groupRegex>
           <namingRule>CiviCRM VoterTools</namingRule>
           <useDisplayName>false</useDisplayName>
         </org.jenkinsci.plugins.categorizedview.GroupingRule>
