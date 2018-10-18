@@ -9,6 +9,7 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>(System)</jdk>
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
@@ -16,7 +17,7 @@
       <command>mkdir -p tmp</command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
-      <command>PATH=$PATH:/usr/local/bin;votertools florida:voterimport --tmp tmp gpfl /tmp/voters.zip</command>
+      <command>PATH=$PATH:/usr/local/bin;votertools florida:historyimport --tmp tmp gpfl /tmp/history.zip</command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
       <command>rm -Rf tmp</command>
