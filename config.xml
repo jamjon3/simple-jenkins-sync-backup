@@ -1,5 +1,12 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <hudson>
+  <temporaryOfflineCause class="hudson.node_monitors.DiskSpaceMonitorDescriptor$DiskSpace">
+    <timestamp>1571134458592</timestamp>
+    <path>/var/lib/jenkins</path>
+    <size>1062608896</size>
+    <triggered>true</triggered>
+    <trigger>hudson.node_monitors.DiskSpaceMonitor</trigger>
+  </temporaryOfflineCause>
   <disabledAdministrativeMonitors>
     <string>jenkins.diagnostics.SecurityIsOffMonitor</string>
   </disabledAdministrativeMonitors>
